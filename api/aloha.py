@@ -10,9 +10,9 @@ class handler(BaseHTTPRequestHandler):
       query_list=parse.parse_qsl(url_components.query)
       dic=dict(query_list)
 
-      name=dict.get("name")
+      name=dic.get("name")
 
-      age=dict.get("age")
+      age=dic.get("age")
 
       if name:
           msg=f'Aloha{name}'
